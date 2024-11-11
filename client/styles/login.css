@@ -1,0 +1,149 @@
+.auth-title {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.panel-login .form-control,
+.panel-signup .form-control,
+.panel-forgot .form-control {
+  color: #333333;
+  font-size: 16px;
+  height: 50px;
+  padding: 12px;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-form {
+  visibility: hidden;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay #closeBtn {
+  width: 6rem;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #5f5f5f;
+  opacity: 0.5;
+  z-index: 2;
+  display: none;
+}
+.signup-form_active {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+  z-index: 999;
+}
+
+.overlay_active {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+}
+.pwdMask {
+  position: relative;
+}
+.pwd-toggle:hover {
+  cursor: pointer;
+}
+.pwdMask .pwd-toggle {
+  color: #cccccc;
+  position: absolute;
+  z-index: 2;
+}
+
+.pwdMask .pwd-toggle {
+  top: 15px;
+  right: 15px;
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input:before {
+  background-color: #fe8402;
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+input:focus + .focus-input:before {
+  width: 100%;
+}
+
+.authfy-login {
+  height: 515px;
+  margin: 40px auto 25px;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  /* box-shadow: 0 3px 5px rgba(0, 0, 0, .05); */
+  background-color: #fff;
+  border-radius: 10px;
+  /* border: 1px solid #ddd; */
+  box-shadow: 0 4px 12px rgba(158, 158, 158, 0.12);
+  border-radius: 8px;
+}
+
+.authfy-login .authfy-panel {
+  padding: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+.authfy-login .active {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+@media only screen and (max-width: 767px) {
+  .offcanvas_menu {
+    display: block;
+  }
+}
