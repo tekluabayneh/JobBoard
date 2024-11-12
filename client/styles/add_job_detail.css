@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100v;
+  overflow-x: hidden;
+}
+
+.job_detail_hero {
+  width: 100%;
+  /* height: 100vh; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 6rem;
+  margin-bottom: 3rem;
+}
+
+.job_detail_hero_sub_container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.job_title_containe {
+  width: 100%;
+  /* background: #000; */
+}
+.job_title_containe input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.checkbox_containe {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 40px;
+  padding: 1rem;
+}
+.checkbox_containe .item div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.checkbox_containe .item div input[type="checkbox"] {
+  position: relative;
+}
+.checkbox_containe .item div input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -3px;
+  width: 18px;
+  height: 18px;
+  border: 4px solid green;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* location div css */
+
+.location_dro_down_container {
+  width: 100%;
+  /* background: #000; */
+  padding-bottom: 2rem;
+}
+.location_dro_down_sub_container {
+  width: 100%;
+  display: grid;
+  gap: 21px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* background: #000; */
+}
+
+select {
+  width: 100%;
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding-inline: 1rem;
+  padding-block: 0.4rem;
+  outline: none;
+}
+.drop_item {
+  width: 100%;
+  position: relative;
+}
+
+.drop_item label {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 80%;
+  height: 80%;
+  border: 1px solid gray;
+  border-radius: 2px;
+  background: rgb(255, 255, 255);
+  z-index: 333;
+  padding-left: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+select:valid + .drop_item label {
+  opacity: 0;
+}
+
+/* log icon and person iimage css */
+
+.logo_icon_phone_image_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+  /* gap: 16px; */
+  padding-bottom: 2rem;
+}
+
+.job_icon,
+.conntact_person_image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 12px; */
+  position: relative;
+}
+
+.icon {
+  top: 30%;
+  left: 13%;
+  /* transform: translate(50%, -40%); */
+  position: absolute;
+}
+.icon i {
+  font-size: 2rem;
+  font-weight: 900;
+  background: transparent;
+  color: transparent;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+.job_icon button,
+.conntact_person_image button {
+  width: 6rem;
+  cursor: pointer;
+  text-wrap: nowrap;
+  background: #c9c9c9;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.import_image {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 4px;
+  background: rgb(231, 231, 231);
+  text-align: center;
+}
+
+.logo_icon_phone_image_container .phone_email_name_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.phone_email_name_container input {
+  margin-bottom: 1rem;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0.5rem;
+  position: relative;
+  outline: none;
+  padding-left: 2rem;
+}
+
+.phone_email_name_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between each input */
+}
+
+.input_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input_container .material-icons {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #757575;
+  z-index: 222;
+}
+
+.input_person_relative {
+  padding-left: 35px; /* Create space for the icon */
+  height: 35px; /* Optional: adjust input height */
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.job_description {
+  width: 100%;
+}
+.job_description textarea {
+  width: 100%;
+  height: 4rem;
+  padding-left: 1rem;
+}
+
+@media (max-width: 500px) {
+  h6 {
+    font-size: 12px;
+  }
+}
