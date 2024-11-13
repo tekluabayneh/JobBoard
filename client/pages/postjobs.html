@@ -24,7 +24,6 @@
     />
 
     <link rel="stylesheet" href="../styles/homepage.css" />
-
     <title>JobBoard</title>
   </head>
   <body>
@@ -36,8 +35,8 @@
         <ul class="list-unstyled d-flex gap-3">
           <li>
             <a
-              id="open_login"
-              class="btn btn-secondary text-decoration-none fw-bold"
+              href="../index.html"
+              class="Btnlogout btn btn-secondary text-decoration-none fw-bold"
               >Logout</a
             >
           </li>
@@ -54,10 +53,10 @@
     <!-- job post section start here -->
     <section class="post_job_container">
       <div class="container">
-        <div class="row text-capitalize">
+        <div class="row text-capitalize mb-5">
           <h2 class="post_job_title fs-1 fw-bold pt-5">your companies</h2>
           <p class="small_descriptino text-body-tertiary">
-            select companies to create a job add for
+            Select a company to create a new job posting.
           </p>
 
           <div class="companies_container ms-5 w-100 mb-3">
@@ -70,36 +69,6 @@
                   href="postjob_detail.html"
                   >Amazone</a
                 ><i class="material-icons">arrow_forward</i>
-              </li>
-              <li
-                class="border rounded border-bottom-0 w-25 p-2 d-flex align-items-center justify-content-between"
-              >
-                <a
-                  class="text-body-tertiary text-decoration-none"
-                  href="postjob_detail.html"
-                  >google</a
-                >
-                <i class="material-icons">arrow_forward</i>
-              </li>
-              <li
-                class="border rounded border-bottom-0 w-25 p-2 d-flex align-items-center justify-content-between"
-              >
-                apple <i class="material-icons">arrow_forward</i>
-              </li>
-              <li
-                class="border rounded border-bottom-0 w-25 p-2 d-flex align-items-center justify-content-between"
-              >
-                netflix <i class="material-icons">arrow_forward</i>
-              </li>
-              <li
-                class="border rounded border-bottom-0 w-25 p-2 d-flex align-items-center justify-content-between"
-              >
-                space-x <i class="material-icons">arrow_forward</i>
-              </li>
-              <li
-                class="border rounded border-bottom-0 w-25 p-2 d-flex align-items-center justify-content-between"
-              >
-                coca-cola <i class="material-icons">arrow_forward</i>
               </li>
             </ul>
           </div>
@@ -120,7 +89,7 @@
     <!-- job post section end here -->
 
     <!-- footer section start here -->
-    <footer class="bg-dark text-light py-4">
+    <footer class="bg-dark text-light py-4 mt-5">
       <div class="container">
         <div class="row">
           <!-- Logo and About Section -->
@@ -170,6 +139,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script/login.js"></script>
+    <script src="../script/logout.js"></script>
+    <script src="../script/showCompanies.js"></script>
   </body>
 </html>

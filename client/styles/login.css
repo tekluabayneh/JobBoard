@@ -3,7 +3,9 @@
   font-weight: 700;
   padding-bottom: 0.5rem;
 }
-
+a:hover {
+  cursor: pointer;
+}
 .panel-login .form-control,
 .panel-signup .form-control,
 .panel-forgot .form-control {
@@ -140,6 +142,17 @@ input:focus + .focus-input:before {
   opacity: 1;
   transform: translateX(0);
   -webkit-transform: translateX(0);
+}
+@media (max-width: 500px) {
+  .authfy-login {
+    width: 90%;
+  }
+}
+
+@media (min-width: 800px) {
+  .authfy-login {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
