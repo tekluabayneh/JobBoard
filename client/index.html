@@ -50,7 +50,9 @@
             >
           </li>
           <li class="btn btn-info">
-            <a href="pages/postjobs.html" class="text-white text-decoration-none fw-bold"
+            <a
+              href="pages/postjobs.html"
+              class="text-white text-decoration-none fw-bold"
               >Post Jobs</a
             >
           </li>
@@ -63,227 +65,227 @@
     <section id="home" class="hero signup-form">
       <!--container-->
       <div class="container">
-        <div class="authfy-login bg-white shadow rounded pb-5 row w-50">
-          <!-- panel-login start -->
-          <div class="authfy-panel panel-login text-center p-4 mt-3 active">
-            <div class="authfy-heading">
-              <span class="showSigninMessage" style="color: red"></span>
-              <h3 class="auth-title">Login to your account</h3>
+        <div class="row">
+          <div class="authfy-login bg-white shadow rounded pb-5">
+            <!-- panel-login start -->
+            <div class="authfy-panel panel-login text-center p-4 mt-3 active">
+              <div class="authfy-heading">
+                <span class="showSigninMessage" style="color: red"></span>
+                <h3 class="auth-title">Login to your account</h3>
 
-              <p>
-                Don’t have an account?
-                <a class="lnk-toggler" data-panel=".panel-signup" href="#"
-                  >Create a new account</a
-                >
-              </p>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-12 col-sm-12">
-                <div class="ajax-return-login"></div>
-                <form name="loginForm" class="loginForm">
-                  <div class="form-group wrap-input m-2">
-                    <input
-                      type="email"
-                      class="form-control eva_email"
-                      name="eva_email"
-                      placeholder="Email address"
-                    />
-                    <span class="focus-input"></span>
-                  </div>
-                  <div class="form-group wrap-input m-2">
-                    <div class="pwdMask">
-                      <input
-                        type="password"
-                        class="form-control eva_password"
-                        name="eva_password"
-                        placeholder="Password"
-                      />
-                      <span class="focus-input"></span>
-                      <span
-                        class="fa fa-eye-slash pwd-toggle"
-                        aria-hidden="true"
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="row remember-row">
-                    <div class="col-xs-6 col-sm-6"></div>
-                    <div class="col-xs-6 col-sm-6">
-                      <p class="forgotPwd">
-                        <a
-                          class="lnk-toggler"
-                          data-panel=".panel-forgot"
-                          href="#"
-                          >Forgot password?</a
-                        >
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <button
-                      class="btn btn-lg btn-primary btn-block w-100"
-                      id="btnLogin"
-                      type="submit"
-                    >
-                      Login
-                    </button>
-                  </div>
-                </form>
+                <p>
+                  Don’t have an account?
+                  <a class="lnk-toggler" data-panel=".panel-signup"
+                    >Create a new account</a
+                  >
+                </p>
               </div>
-            </div>
-          </div>
 
-          <!-- ./panel-login -->
-          <!-- panel-signup start -->
-
-          <div class="authfy-panel panel-signup text-center">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12">
-                <p class="showMessage" style="color: red"></p>
-                <div class="authfy-heading">
-                  <h3 class="auth-title">Join the network</h3>
-
-                  <p>
-                    Already have an account?<a
-                      class="lnk-toggler"
-                      data-panel=".panel-login"
-                      href="#"
-                    >
-                      Sign in</a
-                    >
-                  </p>
-                </div>
-                <div class="ajax-return"></div>
-                <form name="signupForm" id="signupForm">
-                  <div class="form-group wrap-input m-1">
-                    <input
-                      type="email"
-                      class="form-control eva_email"
-                      name="eva_email"
-                      placeholder="Email address"
-                    />
-                    <span class="focus-input"></span>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-6 no-padding">
-                      <div class="form-group wrap-input m-1">
-                        <input
-                          type="text"
-                          class="form-control eva_firstname"
-                          name="eva_firstname"
-                          placeholder="First name"
-                        />
-                        <span class="focus-input"></span>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 no-padding">
-                      <div class="form-group wrap-input m-1">
-                        <input
-                          type="text"
-                          class="form-control eva_lastname"
-                          name="eva_lastname"
-                          placeholder="Last name"
-                        />
-                        <span class="focus-input"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group wrap-input m-1">
-                    <div class="pwdMask">
-                      <input
-                        type="password"
-                        class="form-control eva_password"
-                        name="eva_password"
-                        placeholder="Password"
-                      />
-                      <span class="focus-input"></span>
-                      <span
-                        class="fa fa-eye-slash pwd-toggle"
-                        aria-hidden="true"
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <p class="term-policy text-muted small">
-                      I agree to the
-                      <a href="/legal/privacy/" target="_blank"
-                        >privacy policy</a
-                      >
-                      and
-                      <a href="/legal/terms/" target="_blank"
-                        >terms of service</a
-                      >.
-                    </p>
-                  </div>
-                  <div class="form-group">
-                    <button
-                      class="btn btn-lg btn-primary btn-block w-100 p-2"
-                      id="btnSignin"
-                      type="submit"
-                    >
-                      Agree and Join
-                    </button>
-                  </div>
-                </form>
-                <a class="lnk-toggler mb-5" data-panel=".panel-login" href="#"
-                  >Already have an account?</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- ./panel-signup -->
-          <!-- panel-forget start -->
-
-          <div class="authfy-panel panel-forgot p-4">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12">
-                <div class="reset-wrapper">
-                  <div class="authfy-heading">
-                    <h3 class="auth-title">Reset your password</h3>
-                    <p>
-                      Fill in your e-mail address below and we will send you an
-                      email with further instructions.
-                    </p>
-                  </div>
-                  <div class="email-not-found"></div>
-                  <form name="forgetForm" class="forgetForm" method="POST">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="ajax-return-login"></div>
+                  <form name="loginForm" class="loginForm">
                     <div class="form-group wrap-input m-2">
                       <input
                         type="email"
-                        class="form-control"
-                        name="emailaddress"
+                        class="form-control eva_email"
+                        name="eva_email"
                         placeholder="Email address"
                       />
                       <span class="focus-input"></span>
                     </div>
+                    <div class="form-group wrap-input m-2">
+                      <div class="pwdMask">
+                        <input
+                          type="password"
+                          class="form-control eva_password"
+                          name="eva_password"
+                          placeholder="Password"
+                        />
+                        <span class="focus-input"></span>
+                        <span
+                          class="fa fa-eye-slash pwd-toggle"
+                          aria-hidden="true"
+                        ></span>
+                      </div>
+                    </div>
+                    <div class="row remember-row">
+                      <div class="col-xs-6 col-sm-6"></div>
+                      <div class="col-xs-6 col-sm-6">
+                        <p class="forgotPwd">
+                          <a class="lnk-toggler" data-panel=".panel-forgot"
+                            >Forgot password?</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+
                     <div class="form-group">
                       <button
-                        class="btn btn-lg btn-primary btn-block"
+                        class="btn btn-lg btn-primary btn-block w-100"
+                        id="btnLogin"
                         type="submit"
                       >
-                        Reset your password
+                        Login
                       </button>
-                    </div>
-                    <div class="form-group">
-                      <a class="lnk-toggler" data-panel=".panel-login" href="#"
-                        >Already have an account?</a
-                      >
-                    </div>
-                    <div class="form-group">
-                      <a class="lnk-toggler" data-panel=".panel-signup" href="#"
-                        >Don’t have an account?</a
-                      >
                     </div>
                   </form>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- ./panel-forgot -->
+            <!-- ./panel-login -->
+            <!-- panel-signup start -->
+
+            <div class="authfy-panel panel-signup text-center">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <p class="showMessage" style="color: red"></p>
+                  <div class="authfy-heading">
+                    <h3 class="auth-title">Join the network</h3>
+
+                    <p>
+                      Already have an account?<a
+                        class="lnk-toggler"
+                        data-panel=".panel-login"
+                      >
+                        Sign in</a
+                      >
+                    </p>
+                  </div>
+                  <div class="ajax-return"></div>
+                  <form name="signupForm" id="signupForm">
+                    <div class="form-group wrap-input m-1">
+                      <input
+                        type="email"
+                        class="form-control eva_email"
+                        name="eva_email"
+                        placeholder="Email address"
+                      />
+                      <span class="focus-input"></span>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-6 no-padding">
+                        <div class="form-group wrap-input m-1">
+                          <input
+                            type="text"
+                            class="form-control eva_firstname"
+                            name="eva_firstname"
+                            placeholder="First name"
+                          />
+                          <span class="focus-input"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 no-padding">
+                        <div class="form-group wrap-input m-1">
+                          <input
+                            type="text"
+                            class="form-control eva_lastname"
+                            name="eva_lastname"
+                            placeholder="Last name"
+                          />
+                          <span class="focus-input"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group wrap-input m-1">
+                      <div class="pwdMask">
+                        <input
+                          type="password"
+                          class="form-control eva_password"
+                          name="eva_password"
+                          placeholder="Password"
+                        />
+                        <span class="focus-input"></span>
+                        <span
+                          class="fa fa-eye-slash pwd-toggle"
+                          aria-hidden="true"
+                        ></span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <p class="term-policy text-muted small">
+                        I agree to the
+                        <a href="" target="_blank">privacy policy</a>
+                        and
+                        <a href="" target="_blank">terms of service</a>.
+                      </p>
+                    </div>
+                    <div class="form-group">
+                      <button
+                        class="btn btn-lg btn-primary btn-block w-100 p-2"
+                        id="btnSignin"
+                        type="submit"
+                      >
+                        Agree and Join
+                      </button>
+                    </div>
+                  </form>
+                  <a class="lnk-toggler mb-5" data-panel=".panel-login"
+                    >Already have an account?</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- ./panel-signup -->
+            <!-- panel-forget start -->
+
+            <div class="authfy-panel panel-forgot p-4">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="reset-wrapper">
+                    <div class="authfy-heading">
+                      <h3 class="auth-title">Reset your password</h3>
+                      <p>
+                        Fill in your e-mail address below and we will send you
+                        an email with further instructions.
+                      </p>
+                    </div>
+                    <div class="email-not-found"></div>
+                    <form name="forgetForm" class="forgetForm" method="POST">
+                      <div class="form-group wrap-input m-2">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="emailaddress"
+                          placeholder="Email address"
+                        />
+                        <span class="focus-input"></span>
+                      </div>
+                      <div class="form-group">
+                        <button
+                          class="btn btn-lg btn-primary btn-block"
+                          type="submit"
+                        >
+                          Reset your password
+                        </button>
+                      </div>
+                      <div class="form-group">
+                        <a
+                          class="lnk-toggler"
+                          data-panel=".panel-login"
+                          href="#"
+                          >Already have an account?</a
+                        >
+                      </div>
+                      <div class="form-group">
+                        <a
+                          class="lnk-toggler"
+                          data-panel=".panel-signup"
+                          href="#"
+                          >Don’t have an account?</a
+                        >
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ./panel-forgot -->
+          </div>
         </div>
         <!-- ./authfy-login -->
       </div>
@@ -862,5 +864,6 @@
     ></script>  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script/login.js"></script>
+    <script src="script/Auth.js"></script>
   </body>
 </html>

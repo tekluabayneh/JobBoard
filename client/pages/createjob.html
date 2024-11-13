@@ -35,9 +35,7 @@
         <h3 class="fw-bold">Job board</h3>
         <ul class="list-unstyled d-flex gap-3">
           <li>
-            <a
-              id="open_login"
-              class="btn btn-secondary text-decoration-none fw-bold"
+            <a class="Btnlogout btn btn-secondary text-decoration-none fw-bold"
               >Logout</a
             >
           </li>
@@ -60,15 +58,25 @@
           <p class="text-body-tertiary">
             to create a job listingyour first need to register a companies
           </p>
-
+          <p class="show_table_messge"></p>
           <div class="input_container d-flex">
-            <input class="form-control w-25" type="text" placeholder="Enter Companies Name" />
+            <input
+              class="companiesnameInput form-control w-25"
+              type="text"
+              placeholder="Enter Companies Name"
+            />
             <button class="btn btn-secondary fw-bold ms-4">
-                <a class="fw-bold text-white text-decoration-none" href="postjobs.html">create companies</a>
+              <a
+                class="btnCreatecompanies fw-bold text-white text-decoration-none"
+                href="postjobs.html"
+                >create companies</a
+              >
             </button>
           </div>
         </div>
       </div>
     </section>
+    <script src="../script/logout.js"></script>
+    <script src="../script/createtable.js"></script>
   </body>
 </html>

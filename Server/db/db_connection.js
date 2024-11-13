@@ -2,10 +2,10 @@ const dotenv = require("dotenv");
 const mysql2 = require("mysql2");
 
 const db = mysql2.createPool({
-  host: "root",
-  user: "jobBord",
+  host: "localhost",
+  user: "root",
   password: "root",
-  database: "companies",
+  database: "job_board",
   port: 3306,
   queueLimit: 10,
 });
