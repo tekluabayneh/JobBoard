@@ -17,6 +17,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="styles/homepage.css" />
     <!-- login css -->
@@ -302,15 +306,16 @@
               <h1 class="home_title text-black fw-bolder py-4 gradient-text">
                 find your next dream Job!
               </h1>
+              <h5 class="ShowJob_searchStatus"></h5>
               <div
                 class="search d-flex align-items-center justify-content-center gap-2"
               >
                 <input
-                  class="py-3 px-4 text-align-left rounded"
+                  class="py-3 px-4 text-align-left rounded job_search_input"
                   type="text"
                   placeholder="Search Jobs"
                 />
-                <button class="btn btn-info">Search</button>
+                <button class="BtnSearchjob btn btn-info">Search</button>
               </div>
             </div>
           </div>
@@ -352,344 +357,8 @@
                 class="likeicon_and_minute_conainer gap-4 flex-column"
               >
                 <i class="ms-5">like icon</i>
-                <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
-              </div>
-            </div>
-            <div
-              class="job_with_their_company_container bg-white rounded-3 w-75 m-auto d-flex align-items-center justify-content-between p-2 mb-3"
-            >
-              <div class="job_title_and_content_container">
-                <!-- job campony image -->
-                <div class="image_container p-2">
-                  <img class="img-fluid" src="download.jpeg" alt="" />
-                </div>
+                <i className="material-icons">favorite</i>
 
-                <!-- job content -->
-                <div class="company_content d-flex flex-column ms-3">
-                  <h6 class="fw-bold text-body-tertiary">Amazone</h6>
-
-                  <h5 class="fw-bolder Senior_title">Senior cloud arcteture</h5>
-
-                  <div class="d-flex text-body-tertiary">
-                    <p>remote,</p>
-                    <p>phonix,</p>
-                    <p>united state,</p>
-                    <p>full time</p>
-                  </div>
-                </div>
-              </div>
-              <!-- job like icone minute container-->
-
-              <div
-                id="like_second_container"
-                class="likeicon_and_minute_conainer gap-4 flex-column"
-              >
-                <i class="ms-5">like icon</i>
-                <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
-              </div>
-            </div>
-            <div
-              class="job_with_their_company_container bg-white rounded-3 w-75 m-auto d-flex align-items-center justify-content-between p-2 mb-3"
-            >
-              <div class="job_title_and_content_container">
-                <!-- job campony image -->
-                <div class="image_container p-2">
-                  <img class="img-fluid" src="download.jpeg" alt="" />
-                </div>
-
-                <!-- job content -->
-                <div class="company_content d-flex flex-column ms-3">
-                  <h6 class="fw-bold text-body-tertiary">Amazone</h6>
-
-                  <h5 class="fw-bolder Senior_title">Senior cloud arcteture</h5>
-
-                  <div class="d-flex text-body-tertiary">
-                    <p>remote,</p>
-                    <p>phonix,</p>
-                    <p>united state,</p>
-                    <p>full time</p>
-                  </div>
-                </div>
-              </div>
-              <!-- job like icone minute container-->
-
-              <div
-                id="like_second_container"
-                class="likeicon_and_minute_conainer gap-4 flex-column"
-              >
-                <i class="ms-5">like icon</i>
-                <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
-              </div>
-            </div>
-
-            <div
-              class="job_with_their_company_container bg-white rounded-3 w-75 m-auto d-flex align-items-center justify-content-between p-2 mb-3"
-            >
-              <div class="job_title_and_content_container">
-                <!-- job campony image -->
-                <div class="image_container p-2">
-                  <img class="img-fluid" src="download.jpeg" alt="" />
-                </div>
-
-                <!-- job content -->
-                <div class="company_content d-flex flex-column ms-3">
-                  <h6 class="fw-bold text-body-tertiary">Amazone</h6>
-
-                  <h5 class="fw-bolder Senior_title">Senior cloud arcteture</h5>
-
-                  <div class="d-flex text-body-tertiary">
-                    <p>remote,</p>
-                    <p>phonix,</p>
-                    <p>united state,</p>
-                    <p>full time</p>
-                  </div>
-                </div>
-              </div>
-              <!-- job like icone minute container-->
-
-              <div
-                id="like_second_container"
-                class="likeicon_and_minute_conainer gap-4 flex-column"
-              >
-                <i class="ms-5">like icon</i>
-                <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
-              </div>
-            </div>
-
-            <div
-              class="job_with_their_company_container bg-white rounded-3 w-75 m-auto d-flex align-items-center justify-content-between p-2 mb-3"
-            >
-              <div class="job_title_and_content_container">
-                <!-- job campony image -->
-                <div class="image_container p-2">
-                  <img class="img-fluid" src="download.jpeg" alt="" />
-                </div>
-
-                <!-- job content -->
-                <div class="company_content d-flex flex-column ms-3">
-                  <h6 class="fw-bold text-body-tertiary">Amazone</h6>
-
-                  <h5 class="fw-bolder Senior_title">Senior cloud arcteture</h5>
-
-                  <div class="d-flex text-body-tertiary">
-                    <p>remote,</p>
-                    <p>phonix,</p>
-                    <p>united state,</p>
-                    <p>full time</p>
-                  </div>
-                </div>
-              </div>
-              <!-- job like icone minute container-->
-
-              <div
-                id="like_second_container"
-                class="likeicon_and_minute_conainer gap-4 flex-column"
-              >
-                <i class="ms-5">like icon</i>
-                <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
-              </div>
-            </div>
-
-            <div
-              class="job_with_their_company_container bg-white rounded-3 w-75 m-auto d-flex align-items-center justify-content-between p-2 mb-3"
-            >
-              <div class="job_title_and_content_container">
-                <!-- job campony image -->
-                <div class="image_container p-2">
-                  <img class="img-fluid" src="download.jpeg" alt="" />
-                </div>
-
-                <!-- job content -->
-                <div class="company_content d-flex flex-column ms-3">
-                  <h6 class="fw-bold text-body-tertiary">Amazone</h6>
-
-                  <h5 class="fw-bolder Senior_title">Senior cloud arcteture</h5>
-
-                  <div class="d-flex text-body-tertiary">
-                    <p>remote,</p>
-                    <p>phonix,</p>
-                    <p>united state,</p>
-                    <p>full time</p>
-                  </div>
-                </div>
-              </div>
-              <!-- job like icone minute container-->
-
-              <div
-                id="like_second_container"
-                class="likeicon_and_minute_conainer gap-4 flex-column"
-              >
-                <i class="ms-5">like icon</i>
-                <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
-              </div>
-            </div>
-
-            <div
-              class="job_with_their_company_container bg-white rounded-3 w-75 m-auto d-flex align-items-center justify-content-between p-2 mb-3"
-            >
-              <div class="job_title_and_content_container">
-                <!-- job campony image -->
-                <div class="image_container p-2">
-                  <img class="img-fluid" src="download.jpeg" alt="" />
-                </div>
-
-                <!-- job content -->
-                <div class="company_content d-flex flex-column ms-3">
-                  <h6 class="fw-bold text-body-tertiary">Amazone</h6>
-
-                  <h5 class="fw-bolder Senior_title">Senior cloud arcteture</h5>
-
-                  <div class="d-flex text-body-tertiary">
-                    <p>remote,</p>
-                    <p>phonix,</p>
-                    <p>united state,</p>
-                    <p>full time</p>
-                  </div>
-                </div>
-              </div>
-              <!-- job like icone minute container-->
-
-              <div
-                id="like_second_container"
-                class="likeicon_and_minute_conainer gap-4 flex-column"
-              >
-                <i class="ms-5">like icon</i>
-                <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
-              </div>
-            </div>
-
-            <div
-              class="job_with_their_company_container bg-white rounded-3 w-75 m-auto d-flex align-items-center justify-content-between p-2 mb-3"
-            >
-              <div class="job_title_and_content_container">
-                <!-- job campony image -->
-                <div class="image_container p-2">
-                  <img class="img-fluid" src="download.jpeg" alt="" />
-                </div>
-
-                <!-- job content -->
-                <div class="company_content d-flex flex-column ms-3">
-                  <h6 class="fw-bold text-body-tertiary">Amazone</h6>
-
-                  <h5 class="fw-bolder Senior_title">Senior cloud arcteture</h5>
-
-                  <div class="d-flex text-body-tertiary">
-                    <p>remote,</p>
-                    <p>phonix,</p>
-                    <p>united state,</p>
-                    <p>full time</p>
-                  </div>
-                </div>
-              </div>
-              <!-- job like icone minute container-->
-
-              <div
-                id="like_second_container"
-                class="likeicon_and_minute_conainer gap-4 flex-column"
-              >
-                <i class="ms-5">like icon</i>
-                <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
-              </div>
-            </div>
-
-            <div
-              class="job_with_their_company_container bg-white rounded-3 w-75 m-auto d-flex align-items-center justify-content-between p-2 mb-3"
-            >
-              <div class="job_title_and_content_container">
-                <!-- job campony image -->
-                <div class="image_container p-2">
-                  <img class="img-fluid" src="download.jpeg" alt="" />
-                </div>
-
-                <!-- job content -->
-                <div class="company_content d-flex flex-column ms-3">
-                  <h6 class="fw-bold text-body-tertiary">Amazone</h6>
-
-                  <h5 class="fw-bolder Senior_title">Senior cloud arcteture</h5>
-
-                  <div class="d-flex text-body-tertiary">
-                    <p>remote,</p>
-                    <p>phonix,</p>
-                    <p>united state,</p>
-                    <p>full time</p>
-                  </div>
-                </div>
-              </div>
-              <!-- job like icone minute container-->
-
-              <div
-                id="like_second_container"
-                class="likeicon_and_minute_conainer gap-4 flex-column"
-              >
-                <i class="ms-5">like icon</i>
-                <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
-              </div>
-            </div>
-
-            <div
-              class="job_with_their_company_container bg-white rounded-3 w-75 m-auto d-flex align-items-center justify-content-between p-2 mb-3"
-            >
-              <div class="job_title_and_content_container">
-                <!-- job campony image -->
-                <div class="image_container p-2">
-                  <img class="img-fluid" src="download.jpeg" alt="" />
-                </div>
-
-                <!-- job content -->
-                <div class="company_content d-flex flex-column ms-3">
-                  <h6 class="fw-bold text-body-tertiary">Amazone</h6>
-
-                  <h5 class="fw-bolder Senior_title">Senior cloud arcteture</h5>
-
-                  <div class="d-flex text-body-tertiary">
-                    <p>remote,</p>
-                    <p>phonix,</p>
-                    <p>united state,</p>
-                    <p>full time</p>
-                  </div>
-                </div>
-              </div>
-              <!-- job like icone minute container-->
-
-              <div
-                id="like_second_container"
-                class="likeicon_and_minute_conainer gap-4 flex-column"
-              >
-                <i class="ms-5">like icon</i>
-                <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
-              </div>
-            </div>
-
-            <div
-              class="job_with_their_company_container bg-white rounded-3 w-75 m-auto d-flex align-items-center justify-content-between p-2 mb-3"
-            >
-              <div class="job_title_and_content_container">
-                <!-- job campony image -->
-                <div class="image_container p-2">
-                  <img class="img-fluid" src="download.jpeg" alt="" />
-                </div>
-
-                <!-- job content -->
-                <div class="company_content d-flex flex-column ms-3">
-                  <h6 class="fw-bold text-body-tertiary">Amazone</h6>
-
-                  <h5 class="fw-bolder Senior_title">Senior cloud arcteture</h5>
-
-                  <div class="d-flex text-body-tertiary">
-                    <p>remote,</p>
-                    <p>phonix,</p>
-                    <p>united state,</p>
-                    <p>full time</p>
-                  </div>
-                </div>
-              </div>
-              <!-- job like icone minute container-->
-
-              <div
-                id="like_second_container"
-                class="likeicon_and_minute_conainer gap-4 flex-column"
-              >
-                <i class="ms-5">like icon</i>
                 <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
               </div>
             </div>
@@ -865,5 +534,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script/login.js"></script>
     <script src="script/Auth.js"></script>
+    <script src="script/Searchjbo.js"></script>
   </body>
 </html>

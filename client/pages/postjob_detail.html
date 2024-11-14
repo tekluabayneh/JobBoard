@@ -36,13 +36,15 @@
         <h3 class="fw-bold">Job board</h3>
         <ul class="list-unstyled d-flex gap-3">
           <li>
-            <a class="Btnlogout btn btn-secondary text-decoration-none fw-bold"
+            <a
+              href="../index.html"
+              class="Btnlogout btn btn-secondary text-decoration-none fw-bold"
               >Logout</a
             >
           </li>
           <li class="btn btn-info">
             <a
-              href="pages/postjobs.html"
+              href="postjobs.html"
               class="text-white text-decoration-none fw-bold"
               >Post Jobs</a
             >
@@ -57,6 +59,7 @@
       <div class="conrtainer">
         <div class="row text-body-tertiary">
           <div class="job_detail_hero_sub_container">
+            <p class="showStatusMessage"></p>
             <!-- title input container -->
             <div class="job_title_containe">
               <input type="text" placeholder="Enter Title" />
@@ -64,45 +67,76 @@
 
             <!-- checkbox container  -->
 
-            <div class="checkbox_containe">
+            <div class="Radio_containe">
               <div class="item-1 item">
                 <div>
                   <h6>Remote?</h6>
                   <span>
-                    <input type="checkbox" name="" id="" />
-                    <label for="checkbox">on-site</label>
+                    <input
+                      type="radio"
+                      name="remote"
+                      id="on-site"
+                      value="On-site"
+                    />
+                    <label for="on-site">On-site</label>
                   </span>
                   <span>
-                    <input type="checkbox" name="" id="" />
-                    <label for="checkbox">hybird-remote </label>
+                    <input
+                      type="radio"
+                      name="remote"
+                      id="hybrid-remote"
+                      value="Hybrid-remote"
+                    />
+                    <label for="hybrid-remote">Hybrid-remote</label>
                   </span>
                   <span>
-                    <input type="checkbox" name="" id="" />
-                    <label for="checkbox">fully-remote</label>
+                    <input
+                      type="radio"
+                      name="remote"
+                      id="fully-remote"
+                      value="Fully-remote"
+                    />
+                    <label for="fully-remote">Fully-remote</label>
                   </span>
                 </div>
               </div>
+
               <div class="item-2 item">
                 <div>
                   <h6>Full Time?</h6>
                   <span>
-                    <input type="checkbox" name="" id="" />
-                    <label for="checkbox">Project</label>
+                    <input
+                      type="radio"
+                      name="full_time"
+                      id="project"
+                      value="Project"
+                    />
+                    <label for="project">Project</label>
                   </span>
                   <span>
-                    <input type="checkbox" name="" id="" />
-
-                    <label for="checkbox">Part Time</label>
+                    <input
+                      type="radio"
+                      name="full_time"
+                      id="part-time"
+                      value="Part Time"
+                    />
+                    <label for="part-time">Part-Time</label>
                   </span>
                   <span>
-                    <input type="checkbox" name="" id="" />
-                    <label for="checkbox">Full Time</label>
+                    <input
+                      type="radio"
+                      name="full_time"
+                      id="full-time"
+                      value="Full Time"
+                    />
+                    <label for="full-time">Full-Time</label>
                   </span>
                 </div>
               </div>
+
               <div class="item-3 item p-1">
                 <h6>Salary</h6>
-                <input type="text" placeholder="$" />
+                <input class="salary" type="text" placeholder="$" />
               </div>
             </div>
 
@@ -168,15 +202,17 @@
             <!-- image phone and logo icon container -->
             <div class="logo_icon_phone_image_container">
               <div class="job_icon">
-                <h6>Jone Doe</h6>
+                <h6>Job icon</h6>
                 <span class="icon"><i class="material-icons">star</i></span>
                 <span class="import_image"></span>
+                <img src="" alt="" />
                 <button class="btn btn-secondary">Select iamge</button>
               </div>
               <div class="conntact_person_image">
                 <h6>Contact Person</h6>
                 <span class="icon"><i class="material-icons">person</i></span>
                 <span class="import_image"></span>
+                <img src="" alt="" />
                 <button class="btn btn-secondary">Select iamge</button>
               </div>
 
@@ -186,6 +222,7 @@
                   <input
                     class="input_person_relative"
                     type="text"
+                    name="input_name"
                     placeholder="John Doe"
                   />
                 </div>
@@ -194,6 +231,7 @@
                   <i class="material-icons">phone</i>
                   <input
                     class="input_person_relative"
+                    name="input_phone"
                     type="tel"
                     placeholder="Phone"
                   />
@@ -203,6 +241,7 @@
                   <i class="material-icons">email</i>
                   <input
                     class="input_person_relative"
+                    name="input_email"
                     type="email"
                     placeholder="Email"
                   />
@@ -220,7 +259,10 @@
             </div>
             <!-- /////////////////////// -->
             <div class="button_container m-auto">
-              <button class="btn btn-primary px-4 fw-bold letter-spacing-2">
+              <button
+                id="submitButton"
+                class="btn btn-primary px-4 fw-bold letter-spacing-2"
+              >
                 Save
               </button>
             </div>
@@ -282,5 +324,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../script/logout.js"></script>
+    <script src="../script/PostJobs.js"></script>
   </body>
 </html>
