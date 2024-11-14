@@ -2,9 +2,6 @@ let btnCreatecompanies = document.querySelector(".btnCreatecompanies");
 let companiesnameInput = document.querySelector(".companiesnameInput");
 let show_table_messge = document.querySelector(".show_table_messge");
 
-console.log(btnCreatecompanies);
-console.log(companiesnameInput);
-
 const newcompanies = async (e) => {
   e.preventDefault();
   if (companiesnameInput.value == "") {
@@ -27,6 +24,7 @@ const newcompanies = async (e) => {
       companiesnameInput.style.borderColor = "green";
       show_table_messge.style.color = "green";
       companiesnameInput.value = "";
+      window.location.href = "../client/pages/postjobs.html";
     }
     show_table_messge.innerHTML = data.message;
     console.log(data);
