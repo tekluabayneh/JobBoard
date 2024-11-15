@@ -18,12 +18,12 @@ const SearchJob = async (req, res) => {
 
     // check if rsult is not null
     if (result.length == 0 || result.length < 0) {
-      res.status(200).json({ message: `job  not found with ${title}` });
+      res.status(200).json({ message: `job  not found with ${title}`, result });
       return;
     }
 
+    // Replace NULL logo_icon with default URL if it's NULL
     const updatedRows = result.map((row) => {
-      // Replace NULL logo_icon with default URL if it's NULL
       row.logo_icon =
         row.logo_icon ||
         "https://www.shutterstock.com/image-vector/image-icon-trendy-flat-style-600nw-643080895.jpg";
@@ -34,8 +34,6 @@ const SearchJob = async (req, res) => {
 
       return row;
     });
-
-    console.log(result);
 
     res.status(200).json({
       message: `job found with title of ${title}`,
