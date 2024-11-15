@@ -1,12 +1,5 @@
 // let jobs_container = document.querySelector(".jobs_container");
-const ShowPostes = async (e) => {
-  e.preventDefault();
-  let job_search_input = document.querySelectorAll(".job_search_input");
-
-  job_search_input.forEach((value) => {
-    title = value.value;
-  });
-
+const showPostes = async () => {
   try {
     const response = await fetch("http://localhost:3000/api/allPost", {
       headers: {
@@ -15,18 +8,16 @@ const ShowPostes = async (e) => {
     });
     const data = await response.json();
 
-    console.log(title);
-    console.log(data);
-
     jobs_container.innerHTML = ` 
-  ${data.result.map((job) => {
-    return ` <div
+  ${data.result
+    .map((job) => {
+      return ` <div
               class="job_with_their_company_container bg-white rounded-3 w-75 m-auto d-flex align-items-center justify-content-between p-2 mb-3"
             > 
               <div class="job_title_and_content_container">
                 <!-- job campony image -->
                 <div class="image_container p-2">
-                  <img class="img-fluid" src="download.jpeg" alt="logo" />
+                  <img class="img-fluid" src="${job.logo_icon}" alt="logo" />
                 </div>
 
                 <div class="company_content d-flex flex-column ms-3">
@@ -52,12 +43,12 @@ const ShowPostes = async (e) => {
                 <p class="text-body-tertiary p-1 fw-bold">25 minute ago</p>
               </div>
             </div>`;
-  })}
+    })
+    .join(" ")}
   
   `;
   } catch (error) {
     console.log(error);
   }
 };
-
-ShowPostes();
+showPostes();

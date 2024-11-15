@@ -5,7 +5,7 @@ let open_login = document.querySelector("#open_login");
 let showSigninMessage = document.querySelector(".showSigninMessage");
 
 /* handel register form */
-const login = async (e) => {
+const register = async (e) => {
   e.preventDefault();
   let formdata = new FormData(formRegister);
 
@@ -48,10 +48,10 @@ const login = async (e) => {
   }
 };
 
-formRegister.addEventListener("submit", login);
+formRegister.addEventListener("submit", register);
 
 /* handel login form */
-const register = async (e) => {
+const login = async (e) => {
   e.preventDefault();
   let formdata = new FormData(formlogin);
 
@@ -86,10 +86,11 @@ const register = async (e) => {
       showSigninMessage.innerHTML = result.message;
       showSigninMessage.style.color = "green";
       formlogin.reset();
+      window.localStorage.setItem("LoginToken", result.token);
       window.location.href = "../client/pages/authorized_index.html";
     }
   } catch (error) {
     console.log(error);
   }
 };
-formlogin.addEventListener("submit", register);
+formlogin.addEventListener("submit", login);

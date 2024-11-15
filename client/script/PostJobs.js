@@ -56,8 +56,12 @@ $(function () {
 
     // get the selcted description
     selectedDescription = $(".job_description .Job_Descirption").val();
+
+    // get the companyid from the sessionStorage
+    selectedId = sessionStorage.getItem("company_id");
+
     const formData = {
-      company_id: 1 || null, // Using null instead of "" for missing values
+      company_id: selectedId || null, // Using null instead of "" for missing values
       title: selectedTitle || null,
       is_remote: selectedRemote || null,
       job_type: selectedJobType || null,
