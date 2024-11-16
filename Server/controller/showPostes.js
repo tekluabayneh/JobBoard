@@ -5,7 +5,6 @@ const showPostes = async (req, res) => {
     const Query = `SELECT * FROM jobs LEFT JOIN companies ON jobs.company_id = companies.company_id `;
 
     let [result] = await db.execute(Query);
-    console.log(result);
 
     const updatedRows = result.map((row) => {
       row.logo_icon =

@@ -83,7 +83,6 @@ const postJob = async (req, res) => {
       jobId: insertResult.insertId,
       success: true,
     });
-    console.log("Job insertion result:", insertResult);
   } catch (error) {
     console.error("Error occurred:", error);
     res

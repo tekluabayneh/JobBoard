@@ -9,6 +9,8 @@ const SearchJob = require("./controller/Search");
 const postJbo = require("./controller/jobPost");
 const showPostes = require("./controller/showPostes");
 const checkuser = require("./controller/Middelware");
+const getJobDetail = require("./controller/JobDetail");
+const Submitapplicant = require("./controller/applicant");
 
 const port = 3000;
 // midelwares
@@ -25,6 +27,8 @@ app.post("/api/job/search", SearchJob);
 app.post("/api/post/job", postJbo);
 app.get("/api/allPost", showPostes);
 app.get("/api/checkuser", checkuser);
+app.post("/api/getJobDetail", getJobDetail);
+app.post("/api/Submitapplicant", Submitapplicant);
 app.get("/", (req, res) => {
   res.status(200).json("welcome");
 });
@@ -46,6 +50,23 @@ app.get("/create", async (req, res) => {
   }
 });
 
+app.get("/aplicant", async (req, res) => {
+  let table = `CREATE TABLE IF NOT EXISTS applicants (
+  id INT AUTO_INCREMENT PRIMARY KEY, 
+  name VARCHAR(255)NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(15),
+  resume BLOB NOT NULL,
+  description TEXT,
+  company_id INT NOT NULL, 
+  FOREIGN KEY (id) REFERENCES companies(company_id) )`;
+
+  let [result] = await db.execute(table);
+
+  console.log(result);
+  res.status(200).json(result);
+});
+
 app.post("/api/compnies", newcompanie);
 app.get("/get", async (req, res) => {
   let data = `
@@ -56,6 +77,14 @@ app.get("/get", async (req, res) => {
 
   let [reu] = await db.execute(data);
   res.json(reu);
+});
+
+app.get("/man", async (req, res) => {
+  let table = `SELECT * FROM applicants`;
+
+  let [resutl] = await db.execute(table);
+
+  res.json(resutl);
 });
 
 app.listen(port, async (err) => {
