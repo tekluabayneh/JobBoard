@@ -24,7 +24,10 @@ const newcompanies = async (e) => {
       companiesnameInput.style.borderColor = "green";
       show_table_messge.style.color = "green";
       companiesnameInput.value = "";
-      window.location.href = "../client/pages/postjobs.html";
+
+      setTimeout(() => {
+        window.location.href = "/Job_Board/client/pages/postjobs.html";
+      }, 200);
     }
     show_table_messge.innerHTML = data.message;
     console.log(data);
