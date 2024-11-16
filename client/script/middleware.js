@@ -1,6 +1,6 @@
 const PostJobBtn = document.querySelectorAll(".PostJobBtn");
 const showUser_status = document.querySelectorAll(".showUser_status");
-console.log(showUser_status);
+console.log(PostJobBtn);
 const checkuser = async (e) => {
   e.preventDefault();
   try {
@@ -42,6 +42,12 @@ const checkuser = async (e) => {
 
     if (data.success === false) {
       alert("You need to be logged in to post a job.");
+      return;
+    }
+
+    // check and navigate the user to aplicant page if they click apply btn
+    if (e.target.textContent === "apply") {
+      window.location.href = "/Job_Board/client/pages/applicant.html";
       return;
     }
 
