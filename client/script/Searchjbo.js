@@ -1,6 +1,6 @@
 let BtnSearchjob = document.querySelectorAll(".BtnSearchjob");
-let jobs_container = document.querySelector(".jobs_container");
 let ShowJob_searchStatus = document.querySelector(".ShowJob_searchStatus");
+let jobs_container = document.querySelector(".jobs_container");
 let job_search_input = document.querySelectorAll(".job_search_input");
 
 job_search_input.forEach((input) => {
@@ -102,7 +102,7 @@ const Search = async (e) => {
                 id="like_second_container"
                 class="likeicon_and_minute_conainer gap-4 flex-column"
               >
-                <i class="ms-5">like icon</i> 
+                <i class="material-icons ms-5 red-heart"   style="color: red;  cursor: pointer;" >favorite</i>
                 <p class="text-body-tertiary p-1 fw-bold"> ${handelTime(
                   job.created_at
                 )}</p>

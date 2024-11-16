@@ -48,12 +48,12 @@ $(function () {
     // get the job email
     selectedEmail = $(".phone_email_name_container [name='input_email']").val();
 
-    // get the logo icon
-    selectedLogo = $(".logo_icon_phone_image_container input").val();
+    // Get the logo image source
+    selectedLogo = $(".imagePreview_logo").attr("src");
 
-    // get the person image
-    selectedPersonImage = $(".logo_icon_phone_image_container input").val();
-
+    // Get the person image source
+    selectedPersonImage = $(".imagePreview_person").attr("src");
+    console.log(selectedLogo, selectedPersonImage);
     // get the selcted description
     selectedDescription = $(".job_description .Job_Descirption").val();
 
@@ -69,8 +69,8 @@ $(function () {
       city: selectedCity || null,
       country: selectedCountry || null,
       state: selectedState || null,
-      logo_icon: null,
-      person_image: null,
+      logo_icon: selectedLogo || null,
+      person_image: selectedPersonImage || null,
       contact_name: selectedName || null,
       contact_phone: selectedPhone || null,
       contact_email: selectedEmail || null,
@@ -124,5 +124,25 @@ $(function () {
     //     console.error("Submission error:", error);
     //   },
     // });
+  });
+});
+// Get references to all input and image elements using class selectors
+const imageUrlInputs = document.querySelectorAll(".imageUrl");
+const imagePreviews = document.querySelectorAll(".imagePreview");
+
+// Loop over each input field
+imageUrlInputs.forEach((input, index) => {
+  input.addEventListener("input", function () {
+    const imageUrl = input.value;
+
+    // Check if the input is not empty and if it is a valid URL
+    if (imageUrl) {
+      // Set the source of the image to the input value (URL)
+      imagePreviews[index].src = imageUrl;
+      imagePreviews[index].style.display = "block"; // Show the image
+    } else {
+      // Hide the image if the URL is empty
+      imagePreviews[index].style.display = "none";
+    }
   });
 });
