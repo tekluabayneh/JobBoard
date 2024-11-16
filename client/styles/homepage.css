@@ -125,11 +125,12 @@ body {
 
   .text-body-tertiary {
     display: flex;
-    font-size: 16px;
+    font-size: 12px;
+    flex-wrap: wrap;
     gap: 1;
   }
   .Senior_title {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 815px) {
@@ -138,6 +139,7 @@ body {
     align-items: center;
     justify-content: space-around;
   }
+  
   #like_second_container {
     display: none;
   }
@@ -150,7 +152,14 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
+  .home_title {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 500px) {
   .home_title {
     font-size: 32px;
     font-weight: 500;
