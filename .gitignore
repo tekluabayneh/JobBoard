@@ -1,0 +1,11 @@
+# Ignore Node.js modules related to logging
+node_modules/console*
+
+# Ignore environment files
+.env
+
+
+# Ignore log files
+*.log
+
+
