@@ -44,6 +44,13 @@
           </li>
           <li class="btn btn-info">
             <a
+              href="authorized_index.html"
+              class="text-white text-decoration-none fw-bold"
+              >back to home</a
+            >
+          </li>
+          <li class="btn btn-info">
+            <a
               href="postjobs.html"
               class="text-white text-decoration-none fw-bold"
               >Post Jobs</a
@@ -201,19 +208,60 @@
 
             <!-- image phone and logo icon container -->
             <div class="logo_icon_phone_image_container">
-              <div class="job_icon">
-                <h6>Job icon</h6>
-                <span class="icon"><i class="material-icons">star</i></span>
-                <span class="import_image"></span>
-                <img src="" alt="" />
-                <button class="btn btn-secondary">Select iamge</button>
-              </div>
-              <div class="conntact_person_image">
-                <h6>Contact Person</h6>
-                <span class="icon"><i class="material-icons">person</i></span>
-                <span class="import_image"></span>
-                <img src="" alt="" />
-                <button class="btn btn-secondary">Select iamge</button>
+              <div class="logo_person_input_container">
+
+                <div class="d-flex flex-column gap-1">
+                  <!-- Input field for image URL -->
+                  <label for="imageUrl1" class="text-center"
+                    >Link to the logo image:</label
+                  >
+                  <div class="mt-0">
+                    <input
+                      class="m-1 outline-none imageUrl"
+                      type="text"
+                      id="imageUrl1"
+                      placeholder="Paste image URL here"
+                    />
+                  </div>
+                  <!-- Placeholder for the image -->
+
+                  <div class="mb-1 d-flex flex-column gap-2 imageContainer">
+                    <img
+                      class="imagePreview imagePreview_logo"
+                      src=""
+                      alt="Image Preview"
+                      class="w-100 h-100 object-fit-cover"
+                      style="display: none"
+                    />
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-1">
+                  <!-- Input field for image URL -->
+                  <label for="imageUrl2" class="text-center"
+                    >Link the person's image:</label
+                  >
+
+                  <div class="mt-0">
+                    <input
+                      class="mt-0 outline-none imageUrl"
+                      type="text"
+                      id="imageUrl2"
+                      placeholder="Paste image URL here"
+                    />
+                  </div>
+                  <!-- Placeholder for the image -->
+                  <div class="mb-1 d-flex flex-column gap-2 imageContainer">
+                    <img
+                      class="imagePreview imagePreview_person"
+                      src=""
+                      alt="Image Preview"
+                      class="w-100 h-100 object-fit-cover"
+                      style="display: none"
+                    />
+                  </div>
+                </div>
+
               </div>
 
               <div class="phone_email_name_container">
