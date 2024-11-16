@@ -140,6 +140,8 @@ select:valid + .drop_item label {
   flex-direction: column;
   /* gap: 12px; */
   position: relative;
+  border: 2px dotted red;
+  margin-right: 4rem;
 }
 
 .icon {
@@ -167,7 +169,30 @@ select:valid + .drop_item label {
   font-size: 14px;
   font-weight: 500;
 }
+.logo_person_input_container {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  /* background: #000; */
+}
 
+.imageContainer {
+  width: 100px;
+  height: 100px;
+  border-radius: 2px;
+  background: #c9c9c9;
+}
+.imageUrl {
+  outline: none;
+  border: 1px solid rgb(191, 191, 191);
+  border-radius: 3px;
+}
+
+.imagePreview {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
 .import_image {
   width: 100px;
   height: 100px;
@@ -234,5 +259,20 @@ select:valid + .drop_item label {
 @media (max-width: 500px) {
   h6 {
     font-size: 12px;
+  }
+}
+@media (max-width: 993px) {
+  .logo_person_input_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media (max-width: 555px) {
+  .logo_icon_phone_image_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
